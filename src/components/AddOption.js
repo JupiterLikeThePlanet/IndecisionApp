@@ -2,16 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class AddOption extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleAddOption = this.handleAddOption.bind(this);
-    this.state = {
-      error: undefined
-    };
+  // new syntax using babel plugin transform-class-properties
+  state = {
+    error: undefined
   }
-  handleAddOption(e) {
+
+  handleAddOption = (e) => {
     e.preventDefault();
-    console.log(testing);
 
     const option = e.target.elements.option.value.trim();
     const error = this.props.handleAddOption(option);
@@ -22,6 +19,31 @@ class AddOption extends React.Component {
       e.target.elements.option.value = '';
     }
   }
+
+
+  // old syntax w/o plugin transform-class-properties
+
+  // constructor(props) {
+  //   super(props);
+  //   this.handleAddOption = this.handleAddOption.bind(this);
+    // this.state = {
+    //   error: undefined
+    // };
+  // }
+  // handleAddOption(e) {
+  //   e.preventDefault();
+  //
+  //   const option = e.target.elements.option.value.trim();
+  //   const error = this.props.handleAddOption(option);
+  //
+  //   this.setState(() => ({ error }));
+  //
+  //   if (!error) {
+  //     e.target.elements.option.value = '';
+  //   }
+  // }
+
+
   render() {
     return (
       <div>
