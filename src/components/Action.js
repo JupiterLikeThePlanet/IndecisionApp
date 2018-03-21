@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Action = (props) => {
-  return (
+
+//we implicitly return stateless components. So using return is not necessary
+// remove return and replace opening { with (
+
+const Action = (props) => (
+
     <div>
       <button
         onClick={props.handlePick}
@@ -11,7 +15,7 @@ const Action = (props) => {
         What should I do?
       </button>
     </div>
-  );
-};
+
+);
 
 export default Action

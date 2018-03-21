@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+//we implicitly return stateless components. So using return is not necessary
+// remove return and replace opening => { with => (
 
-const Option = (props) => {
-  return (
+const Option = (props) => (
+
     <div>
       {props.optionText}
       <button
@@ -14,7 +16,9 @@ const Option = (props) => {
         remove
       </button>
     </div>
-  );
-};
+
+);
+
+
 
 export default Option
