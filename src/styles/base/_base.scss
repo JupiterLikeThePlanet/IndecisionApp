@@ -1,3 +1,8 @@
+html {
+  font-size: 62.5%; //this translates rem's to base 10
+}
+
 body {
+  background: $vapor-blue;
   font-family: Helvetica, Arial, sans-serif;
 }
