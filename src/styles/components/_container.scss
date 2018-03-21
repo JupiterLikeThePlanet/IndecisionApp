@@ -1,0 +1,10 @@
+.container {
+  max-width: 60rem; // defaults to max which is 70rem's
+  //this below isn't working
+  margin: 0 auto;  // 0 > Top and bottom & auto sets margin left and right by giving them 5rems on either side
+  //so I've manually set the values
+  //margin: 0 5rem;
+  padding: 0 $m-size;
+
+}
+

@@ -1,8 +1,42 @@
+//settings come first so that the subsequent files can use the variables established in this file
+@import './base/settings';
 @import './base/base';
+@import 'components/container';
+@import 'components/header';
 
-$brand-color: blue;
 
 
-* {
-  color: $brand-color;
+
+html {
+  font-size: 62.5%; //this translates rem's to base 10
+  font-size: $m-size;
 }
+
+
+
+
+
+
+
+
+//.vapor {
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  position: absolute;
+//  //min-height: 600px;
+//  max-height: 6rem;
+//  z-index: 0;
+//  background-image: url(https://media.giphy.com/media/gSxj0I2b2EMCc/giphy.gif);
+//  animation: animatedBackground 20s linear infinite,
+//  colorShift 5s linear infinite;
+//}
+
+//.vapor:before {
+//  position: relative;
+//  z-index: 1;
+//  opacity: 0.7;
+//  background-image: url(https://media.giphy.com/media/gSxj0I2b2EMCc/giphy.gif);
+//  animation: animatedBackground 20s linear infinite;
+//}
