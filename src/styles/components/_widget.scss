@@ -1,0 +1,32 @@
+
+.widget {
+  background: $vapor-yellow;
+  margin-bottom: $xl-size;
+}
+
+.widget-message {
+  color: $vapor-blue;
+  margin: 0;
+  padding: $l-size;
+  text-align: center;
+  border-bottom: 0.1rem solid darken($vapor-yellow, 30%);
+}
+
+.widget-header{
+  //background: $vapor-yellow;
+  background: darken($vapor-yellow, 10%);
+  color: $vapor-blue;
+  padding: $m-size;
+  //flex box awesomeness
+  display: flex;
+  justify-content: space-between;
+  ///////////////////////
+  //border-bottom: .6rem solid darken($vapor-yellow, 40%);
+
+}
+
+
+
+.widget-header--title {
+  margin: 0
+}

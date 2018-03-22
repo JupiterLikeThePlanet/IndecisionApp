@@ -36,3 +36,4 @@ module.exports = {
 //  NOTES
 //  > using 'cheap-module-source-map' for devtool will eliminate the error: Uncaught Error: A cross-origin error was thrown.
 //  > using ? in "test: /\.s?css$/" makes the "s" optional and allows us to use normalize.css. We can render css and scss files
+//  > babel docs: https://babeljs.io/docs/setup/
