@@ -1,0 +1,26 @@
+.add-option-error {
+  text-align: center;
+  font-style: italic;
+  color: $vapor-blue;
+  padding: 0 $m-size;
+  margin: $m-size 0 0 0;
+  font-size: $m-size;
+}
+
+
+.add-option {
+  display: flex;
+  padding: $m-size;
+}
+
+
+.add-option--input {
+  flex-grow: 1;
+  margin-right: $s-size;
+  border-bottom: .6rem solid darken($vapor-yellow, 30%);
+  //background: $vapor-tropics-green;
+  // for input text
+  color: $vapor-blue;
+  paddding: $s-size;
+  font-size: $m-size;;
+}

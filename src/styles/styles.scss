@@ -1,9 +1,12 @@
 //settings come first so that the subsequent files can use the variables established in this file
 @import './base/settings';
 @import './base/base';
+@import 'components/add_option';
 @import 'components/container';
 @import 'components/header';
 @import 'components/button';
+@import 'components/modal';
+@import 'components/option';
 @import 'components/widget';
 
 

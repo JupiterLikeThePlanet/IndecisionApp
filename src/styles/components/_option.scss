@@ -1,0 +1,23 @@
+
+.option {
+
+  //background: darken($vapor-yellow, 10%);
+
+  //padding: $m-size;
+  //flex box awesomeness
+  display: flex;
+  justify-content: space-between;
+  //font-size: $s-size;
+  padding: $l-size $m-size;
+  border-bottom: 1px solid darken($vapor-yellow, 30%);
+
+}
+
+.option--text {
+  color: $vapor-blue;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0;
+  word-break: break-all;
+}
+

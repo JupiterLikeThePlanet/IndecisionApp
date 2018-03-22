@@ -128,6 +128,7 @@ class IndecisionApp extends React.Component {
       <div className="">
 
         <Header subtitle={subtitle} />
+
         <div className="container">
           <Action
             hasOptions={this.state.options.length > 0}
@@ -146,6 +147,7 @@ class IndecisionApp extends React.Component {
 
           <OptionModal selectedOption={this.state.selectedOption} handleClearSelectedOption={this.handleClearSelectedOption}/>
         </div>
+
       </div>
 
     );
