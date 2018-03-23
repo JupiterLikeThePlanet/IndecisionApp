@@ -11,16 +11,40 @@
 .add-option {
   display: flex;
   padding: $m-size;
+  flex-direction: column;
 }
 
 
 .add-option--input {
   flex-grow: 1;
-  margin-right: $s-size;
+  //change margin-right: $s-size; to set up for mobile devices. Use this in code down below
+  margin: 0 0 $s-size 0; //here things are stacked up and down
   border-bottom: .6rem solid darken($vapor-yellow, 30%);
   //background: $vapor-tropics-green;
   // for input text
   color: $vapor-blue;
   paddding: $s-size;
-  font-size: $m-size;;
+  font-size: $m-size;
+}
+
+
+//CSS conditional that says, "Hey, until screen is 45rem's, apply this style" > Translation: it will show up on devices less than this size
+//@media(max-width: 45rem) {
+//  * {
+//    color:red;
+//  }
+//}
+//Likewise, if we set it at min-width, we're saying that you should apply these styles from 45 to infinity, less than 45rem do not apply these styles
+@media(min-width: 45rem) {
+  .add-option {
+    flex-direction: row;
+  }
+
+  .add-option--input {
+    margin: 0 $s-size 0 0; //here things are stacked left to right
+  }
+
+  //* {
+  //  color:red;
+  //}
 }
